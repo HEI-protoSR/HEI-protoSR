@@ -2,7 +2,7 @@
     <head>
         <style>
             body {
-            background: rgb(125, 198, 205);
+            background: rgba(255, 255, 255, 0.705);
             color: rgb(45, 45, 45);
             padding: 10px;
             font-family: arial;
@@ -14,8 +14,8 @@
 
             /* navigation menu */
             nav {
-                background: rgb(239, 80, 41);
-                margin: 0 auto;
+                background: rgb(255, 0, 0);
+                margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
             }
@@ -35,12 +35,12 @@
             }
             a {
                 text-decoration: none;
-                color: #fff;
+                color: rgb(255, 0, 0);
             }
 
             /* main container area beneath menu */
             main {
-                background: rgb(245, 238, 219);
+                background: #eeff00b7;
                 display: flex;
             }
             .sidebar {
@@ -71,20 +71,23 @@
 
         <main>
             <!--All content goes here-->
-            <div id="all-contents">
+            <div id="all-contents", class="content">
                 <h2 class="red">Sean Roach</h2>
                 <p class="red">Student at BCHS</p>
                 
                 <!--Interests Section-->
-                <div>
+                <div class="sidebar">
+                
+                    <!--Content section-->
                     <h3>Interests</h3>
-                    <ul id="white">
-                        <li>Neuroscience</li>
-                        <li>Chemistry</li>
-                        <li>Coding</li>
+                    <ul id="nav-ul">
+                        <li class="nav-li">Neuroscience</li>
+                        <li class="nav-li">Chemistry</li>
+                        <li class="nav-li">Coding</li>
+
                     </ul>
                 <!--Sidebar Section-->
-                <img src="https://t4.ftcdn.net/jpg/04/33/48/97/360_F_433489775_5RFLAFPIukFMpwXcjByc6PWsqWOAnGAj.jpg"
+                <img class="sidebar-img" src="https://t4.ftcdn.net/jpg/04/33/48/97/360_F_433489775_5RFLAFPIukFMpwXcjByc6PWsqWOAnGAj.jpg">
                 </div> 
             </div>
 
