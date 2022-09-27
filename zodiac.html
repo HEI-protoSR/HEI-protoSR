@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <script>
+            var month = prompt("Enter your birth month as a three letter abbreviation (e.g. Jan).").toLowerCase();
+
+            var numeric = Number(prompt("Enter your birthday in the previously given month as a positive integer."));
+
+
+
+
+
+            if (month === "jan") {
+            user = numeric + 0;
+            
+            } else if (month === "feb") {
+            user = numeric + 31;
+            
+            } else if (month === "mar") {
+            user = numeric + 59;
+            
+            } else if (month === "apr") {
+            user = numeric + 90;
+            
+            } else if (month === "may") {
+            user = numeric + 120;
+            
+            } else if (month === "jun") {
+            user = numeric + 151;
+            
+            } else if (month === "jul") {
+            user = numeric + 181;
+            
+            } else if (month === "aug") {
+            user = numeric + 212;
+            
+            } else if (month === "sep") {
+            user = numeric + 243;
+            
+            } else if (month === "oct") {
+            user = numeric + 273;
+            
+            } else if (month === "nov") {
+            user = numeric + 304;
+            
+            } else if (month === "dec") {
+            user = numeric + 334;
+            
+            } else {
+            alert("There's been an error. It's almost definitely your fault.");
+            
+            }
+
+
+
+
+
+            if (user === null || user <= 0) {
+            alert("Invalid input.");
+            
+            } else if (user > 0 && user <= 19 || user >= 356) {
+            alert("You are a Capricorn.");
+            
+            } else if (user >= 20 && user <= 49) {
+            alert("You are a Aquarius. You're intellectual but friendly, apparently. But you still require affirmation from obscure and inane concepts.");
+            
+            } else if (user >= 50 && user <= 79) {
+            alert("You are a Pisces. Supposedly, you're emotionally sensitive and aware.");
+            
+            } else if (user >= 80 && user <= 109) {
+            alert("You are a Aries. I hear they make great leaders, but there is absolutely zero proof that is the case.");
+            
+            } else if (user >= 110 && user <= 140) {
+            alert("You are a Taurus. You like to relax, I guess?");
+            
+            } else if (user >= 141 && user <= 171) {
+            alert("You are a Gemini. You're super cool and interesting and stuff. You're a social butterfly of the star worshippers or something.");
+            
+            } else if (user >= 172 && user <= 203) {
+            alert("You are a Cancer. A giant crab you say?");
+            
+            } else if (user >= 204 && user <= 234) {
+            alert("You are a Leo. The mothershi- I mean STARS tell me you are vivacious, theatrical, and somewhat (although probably not) royal.");
+            
+            } else if (user >= 235 && user <= 265) {
+            alert("You are a Virgo. Logic. Practicality. A systematic approach. These are all attributes which I wholeheartedly respect. Unfortunately, the likelihood that you share those beliefs is close to naught.");
+            
+            } else if (user >= 266 && user <= 295) {
+            alert("You are a Libra. Symmetry and equilibrium is big for            you, huh?");
+            
+            } else if (user >= 296 && user <= 325) {
+            alert("You are a Scorpio. Scorpios are supposed to be discreet and secretive. How's this for sneaky? \nBetter luck next time, bucko. I run this whole operation.");
+                
+            var audio = new Audio('file:///C:/Users/crazy/Downloads/mixkit-classic-alarm-995.wav');
+            audio.play();
+            
+            } else if (user >= 326 && user <= 355) {
+            alert("You are a Sagittarius. You AREN'T smart, assertive, and compassionate. The stars lied. They LIED to you. You're actually a GEMINI. \nHave fun with your new existential crisis.");
+            
+            } else {
+            alert("There was an error. \n You did something wrong.");
+
+            }
+        </script>
+    </head>
+    
+    <body>
+        <style>
+            
+        </style>
+
+    </body>
+
+</html>
