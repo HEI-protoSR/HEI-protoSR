@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: rgb(0, 255, 255);
+			background-image: url("https://static.wikia.nocookie.net/fictionalcrossover/images/a/a1/Space_invaders_alien.jpg/revision/latest?cb=20180913064758");
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -16,9 +16,9 @@
 			top: 100px;
 			left: 1200px;  /* <--- Change me! */
 		}
-		.board{
-			height: 100vh;
-			background-image: url("https://i.pinimg.com/originals/e1/94/64/e1946468b9e96b80f0824d0a19ec01d5.jpg");
+		.board {
+			height: 0px;
+			background-image: url("https://api.time.com/wp-content/uploads/2015/10/iconic-space-photos-armstrong-moon-nasa1.jpg");
 			background-size: cover;
 		}
 	</style>
@@ -81,7 +81,7 @@
 			function update() {
 				/* We want to increase position X by 10px */
 				positionX = positionX + speed;
-				positionY = positionY + speed;
+				positionY = positionY + speed + speedY;
 				moveBoxTo(positionX, positionY);
 
 				if (positionX >= boardWidth) {
@@ -93,10 +93,10 @@
 				}
 
 				if (positionY >= boardHeight) {
-					speedY = -speedY;
+					speedY = speedY * -1;
 
-				} else if (positionY <= 0) {
-					speedY = -speedY;
+				} else if (positionY <= 400) {
+					speedY = speedY * 1;
 
 				}
 
@@ -117,8 +117,10 @@
 
 				if (speed >= 0) {
 					speed = speed + 3;
+					speedY = speedY + 2;
 				} else if (speed <= 0) {
 					speed = speed - 3;
+					speedY = speedY - 2;
 
 				}
 				
